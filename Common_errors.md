@@ -1,12 +1,12 @@
 # How to install WSL (Ubuntu) in Windows 11?
-Follow this tutorial
+Follow this [tutorial](https://www.youtube.com/watch?v=Re4WMV2Flvo)
 
 # How to install WSL (Ubutu) in Windows 10?
-Follow this tutorial 
+Follow this [tutorial](https://www.youtube.com/watch?v=UsJTAbvM_ls)
 
 # Common problems
-1. Errors
-2. I am in Root
+
+## Why am I in root?
 
 Main cause: 
 * You closed your WSL / Ubuntu windows before defining your user.
@@ -18,37 +18,30 @@ root@YOURMACHINENAME windows/path/file
 Solution:
 
 **EASIEST**
+
 Uninstall UBUNTU and Install it again, making sure you set your username and password correctly. 
 
 **ALTERNATIVE (PRO VERSION)**
+
 To solve this problem, you will need to know your password, if not, you could recover your password from this tutorial. 
 
 1. Create new user name
 ```
-adduser YOURUSERNAME
+root@YOURMACHINENAME adduser YOURUSERNAME
 ```
 2. Give write and edit permissions to your username
 ```
-sudo usermod -aG sudo YOURUSERNAME
+root@YOURMACHINENAME sudo usermod -aG sudo YOURUSERNAME
 ```
 
 3. Change from root to your username
 ```
-su - YOURUSERNAME
+root@YOURMACHINENAME su - YOURUSERNAME
 ```
 
-It should be ready to use and look like this
+It should be ready to use and look like this in the Ubuntu window:
 ```
 YOURUSERNAME@YOURMACHINE
-```
-
-
-
-
-
-Read comes as default
-
-```
 ```
 
 # References
