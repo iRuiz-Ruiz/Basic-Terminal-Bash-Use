@@ -27,16 +27,16 @@ To solve this problem, you will need to know your password, if not, you could re
 
 1. Create new user name
 ```
-root@YOURMACHINENAME adduser YOURUSERNAME
+adduser YOURUSERNAME
 ```
 2. Give write and edit permissions to your username
 ```
-root@YOURMACHINENAME sudo usermod -aG sudo YOURUSERNAME
+sudo usermod -aG sudo YOURUSERNAME
 ```
 
 3. Change from root to your username
 ```
-root@YOURMACHINENAME su - YOURUSERNAME
+su - YOURUSERNAME
 ```
 
 It should be ready to use and look like this in the Ubuntu window:
