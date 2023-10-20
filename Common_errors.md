@@ -1,15 +1,55 @@
+# How to install WSL (Ubuntu) in Windows 11?
+Follow this tutorial
+
+# How to install WSL (Ubutu) in Windows 10?
+Follow this tutorial 
+
 # Common problems
 1. Errors
+2. I am in Root
 
-2. Being root
-## Create new user name
-adduser USERNAME
+Main cause: 
+* You closed your WSL / Ubuntu windows before defining your user.
 
-## Change from root to username
-su - username
+It might look like this 
+```
+root@YOURMACHINENAME windows/path/file
+```
+Solution:
 
-## Give write and edit permissions
+**EASIEST**
+Uninstall UBUNTU and Install it again, making sure you set your username and password correctly. 
+
+**ALTERNATIVE (PRO VERSION)**
+To solve this problem, you will need to know your password, if not, you could recover your password from this tutorial. 
+
+1. Create new user name
+```
+adduser YOURUSERNAME
+```
+2. Give write and edit permissions to your username
+```
+sudo usermod -aG sudo YOURUSERNAME
+```
+
+3. Change from root to your username
+```
+su - YOURUSERNAME
+```
+
+It should be ready to use and look like this
+```
+YOURUSERNAME@YOURMACHINE
+```
+
+
+
+
+
 Read comes as default
+
+```
+```
 
 # References
 IONOS [https://www.ionos.co.uk/help/server-cloud-infrastructure/server-administration/creating-a-sudo-enabled-user/]
