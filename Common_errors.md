@@ -39,6 +39,11 @@ sudo usermod -aG sudo YOURUSERNAME
 su - YOURUSERNAME
 ```
 
+In case you want to return to root and create new users:
+```
+sudo su
+```
+
 It should be ready to use and look like this in the Ubuntu window:
 ```
 YOURUSERNAME@YOURMACHINE
@@ -47,5 +52,6 @@ YOURUSERNAME@YOURMACHINE
 # References
 IONOS [https://www.ionos.co.uk/help/server-cloud-infrastructure/server-administration/creating-a-sudo-enabled-user/]
 UNIX & LINUX [https://unix.stackexchange.com/questions/156962/how-to-change-to-normal-user-in-the-command-line-when-logged-in-as-the-root-user]
+1Gbits [https://1gbits.com/blog/how-to-switch-to-root-user-ubuntu/]
 
-Thank to gazal
+Thank to Gazal
